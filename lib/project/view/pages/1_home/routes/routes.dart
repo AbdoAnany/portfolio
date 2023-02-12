@@ -6,6 +6,7 @@ import '../pages/certification_page.dart';
 import '../pages/contact_page.dart';
 import '../pages/experience_page.dart';
 import '../pages/home/home_page.dart';
+import '../pages/project_detail/project_detail_page.dart';
 import '../pages/works/works_page.dart';
 
 typedef PathWidgetBuilder = Widget Function(
@@ -37,10 +38,10 @@ class RouteConfiguration {
   /// will be returned. This means that the paths higher up in the list will
   /// take priority.
   static List<Path> paths = [
-   // Path(
-   //    r'^' + ContactPage.contactPageRoute,
-   //    (context, matches) => const ContactPage(),
-   //  ),
+   Path(
+      r'^' + ContactPage.contactPageRoute,
+      (context, matches) => const ContactPage(),
+    ),
     Path(
       r'^' + AboutPage.aboutPageRoute,
       (context, matches) => const AboutPage(),
@@ -49,10 +50,10 @@ class RouteConfiguration {
       r'^' + WorksPage.worksPageRoute,
       (context, matches) => const WorksPage(),
     ),
-    // Path(
-    //   r'^' + ProjectDetailPage.projectDetailPageRoute,
-    //   (context, matches) => const ProjectDetailPage(),
-    // ),
+    Path(
+      r'^' + ProjectDetailPage.projectDetailPageRoute,
+      (context, matches) => const ProjectDetailPage(),
+    ),
     Path(
       r'^' + ExperiencePage.experiencePageRoute,
       (context, matches) => const ExperiencePage(),

@@ -142,7 +142,7 @@ class _AnimatedFooterState extends State<AnimatedFooter>
             AnimatedBubbleButton(
               title: AppString.SAY_HELLO.toUpperCase(),
               onTap: () {
-              //  Navigator.pushNamed(context, ContactPage.contactPageRoute);
+                //Navigator.pushNamed(context, ContactPage.contactPageRoute);
               },
             ),
             Spacer(flex: 3),
